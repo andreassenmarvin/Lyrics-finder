@@ -28,6 +28,7 @@ body {
 
 .navbar-toggler {
     border: none;
+    outline: none;
 }
 
 .search-box {
