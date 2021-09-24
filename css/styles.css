@@ -35,11 +35,20 @@ body {
     position: relative;
 }
 
+#search-field {
+    border-radius: 20px;
+}
+
+.search-box ::placeholder {
+    color: #d8d1d1;
+}
+
 .search-btn {
-    position: absolute;
     top: 0;
     right: 0;
     height: 100%;
+    border-radius: 10px;
+    margin-left: 10px;
 }
 
 .single-result {
