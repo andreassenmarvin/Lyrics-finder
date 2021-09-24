@@ -8,3 +8,7 @@ const searchSongs = () => {
         .then(data => displaySongs(data.data))
         .catch(error => displayError(error));
 }
+
+const errorTag = document.getElementById('error-message');
+const lyricsDiv = document.getElementById('song-lyrics');
+
