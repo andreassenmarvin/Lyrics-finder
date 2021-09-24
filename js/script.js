@@ -47,7 +47,7 @@ const getLyric = async(artist, title) => {
         const data = await res.json();
         displayLyrics(data.lyrics);
     } catch (error) {
-        displayError('Sorry! I failed to load lyrics, Please try again later!!!')
+        displayError('Sorry! error in loading your query. Try again!!!')
         toggleSpinner();
     }
 }
@@ -59,7 +59,7 @@ const displayLyrics = lyrics => {
 }
 
 const displayError = error => {
-    errorTag.innerText = error;
+    errorTag.innerText = "Sorry! error in loading your query. Try again!!!";
 }
 
 const toggleSpinner = () => {
