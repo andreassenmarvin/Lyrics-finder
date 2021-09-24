@@ -57,3 +57,17 @@ const displayLyrics = lyrics => {
     lyricsDiv.innerText = lyrics;
     toggleSpinner();
 }
+
+const displayError = error => {
+    errorTag.innerText = error;
+}
+
+const toggleSpinner = () => {
+    document.getElementById("loading-spinner").classList.toggle("d-none")
+    document.getElementById("song-container").classList.toggle("d-none")
+}
+document.getElementById("search-field").addEventListener('keypress', function(event) {
+    if (event.key === "Enter") {
+        document.getElementById("search-button").click();
+    }
+});
