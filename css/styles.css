@@ -1,11 +1,11 @@
 body {
-    height: 100%;
+    height: 100vh;
     color: #ffffff;
     background-color: black;
     background-image: url("https://wallpaperaccess.com/full/2256773.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center fixed;
+    background-position: center;
 
 }
 
