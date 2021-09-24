@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 
@@ -15,28 +14,25 @@
 </head>
 
 <body>
-    <div class="container">
-        <nav class="navbar  navbar-dark my-3">
-            <a class="navbar-brand" href="#">
-                <img src="images/logo.png" alt="Hard Rock Solution">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
-                <img src="images/toggler-icon.svg" alt="">
+    <div class="container-fluid">
+        <nav class="navbar  navbar-dark my-2">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+                aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="images/toggler-icon.svg" alt="menu-bar">
             </button>
+            <a class="navbar-brand" href="#">
+                <img src="images/logo .png" alt="Heavy Metal">
+            </a>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#search-field">Search</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="#">Action 1</a>
-                            <a class="dropdown-item" href="#">Action 2</a>
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#search-field">Music category</a>
                     </li>
                 </ul>
             </div>
@@ -44,10 +40,11 @@
 
         <main class="content-area">
             <div class="search-bar col-md-6 mx-auto">
-                <h1 class="text-center">Music Lyrics Search<br><small>By <span style="color: #0074D9; cursor: pointer; font-size: 1.2em; font-weight: 700;">Raufu Prezens</span></small></h1>
+                <h1 class="text-center">Music Lyrics Search</h1>
                 <div class="search-box my-5">
                     <input id="search-field" type="text" class="form-control" placeholder="Enter your artist song name">
-                    <button id="search-button" onclick="searchSongs()" class="btn btn-success search-btn">Search</button>
+                    <button id="search-button" onclick="searchSongs()"
+                        class="btn btn-success search-btn">Search</button>
                 </div>
             </div>
             <!-- spinner -->
