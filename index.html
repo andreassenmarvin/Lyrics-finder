@@ -41,27 +41,31 @@
         <main class="content-area">
             <div class="search-bar col-md-6 mx-auto">
                 <h1 class="text-center">Music Lyrics Search</h1>
-                <div class="search-box my-5" style="display: flex;">
-                    <input id="search-field" type="text" class="form-control" placeholder="Input artist or song...">
-                    <button id="search-button" onclick="searchSongs()"
-                        class="btn btn-success search-btn">Search</button>
-                </div>
+                <form>
+                    <div class="search-box my-5" style="display: flex;">
+                        <input id="search-field" type="text" class="form-control" placeholder="Input artist or song..."
+                            required>
+                        <button id="search-button" onclick="searchSongs()"
+                            class="btn btn-success search-btn">Search</button>
+                </form>
             </div>
-            <!-- spinner -->
-            <div class="d-flex justify-content-center">
-                <div id="loading-spinner" class="spinner-border text-warning d-none" role="status">
-                    <span class="visually-hidden"></span>
-                </div>
-            </div>
-            <!-- Single Lyrics -->
-            <h3 id="error-message" class="text-danger"></h3>
-            <div id="song-lyrics" class="single-lyrics text-center">
+    </div>
+    <!-- spinner -->
+    <div class="d-flex justify-content-center">
+        <div id="loading-spinner" class="spinner-border text-warning d-none" role="status">
+            <span class="visually-hidden"></span>
+        </div>
+    </div>
+    <!-- Single Lyrics -->
+    <h3 id="error-message" class="text-center mx-auto"
+        style="color: red; font-size: 25px;"></h3>
+    <div id="song-lyrics" class="single-lyrics text-center">
 
-            </div>
+    </div>
 
-            <div id='song-container' class="search-result col-md-8 mx-auto py-4">
-            </div>
-        </main>
+    <div id='song-container' class="search-result col-md-8 mx-auto py-4">
+    </div>
+    </main>
     </div>
     <!-- JavaScript cdn-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
